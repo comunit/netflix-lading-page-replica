@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imagebackground {
+    position: relative;
+}
+
+.backgroundcontainer {
+    width: 100%;
+    height: 100vh;
+}
+
+.backgroundcontainer img {
+    width: 100%;
+    height: 100vh;
+}
+
+.backgroundshadow {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+}
+
+
+/* logo  */
+
+#netflix-logo {
+    fill: #e50914;
+}
+
+.topbar {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.logo {
+    width: 110px;
+}
+
+.signinbutton {
+    background: #e50914;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    position: absolute;
+    top: 26%;
+    width: 100%;
+    text-align: center;
+}
+
+.content-wrapper {
+    width: 650px;
+    margin: 0 auto;
+}
+
+p.main {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.main2 {
+    font-size: 1.7rem;
+    color: white;
+    margin: 10px 0;
+}
+
+.main3 {
+    font-size: 1.2rem;
+    color: white;
+    margin: 20px 0;
+}
+
+.inputwrapper {
+    display: flex;
+}
+
+.inputwrapper input {
+    width: 480px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.inputwrapper button {
+    background: #e50914;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+
+/* 950 and smaller  */
+
+@media screen and (max-width: 950px) {
+    .inputwrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .inputwrapper input {
+        width: 70%;
+        padding: 10px;
+    }
+    .inputwrapper button {
+        width: 150px;
+        padding: 5px 5px;
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .content-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    p.main {
+        font-size: 1.8rem;
+    }
+    .main2 {
+        font-size: 1.2rem;
+    }
+    .main3 {
+        font-size: 1rem;
+    }
+    .signinbutton {
+        padding: 8px 5px;
+    }
+    .logo {
+        width: 80px;
+    }
+}
