@@ -157,6 +157,40 @@ p.main {
     width: 80%;
 }
 
+.footer {
+    background-color: black;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    padding: 45px 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer1 ul li {
+    list-style: none;
+    color: #757575;
+    padding: 7px;
+    font-size: 0.8rem;
+    min-width: 80px;
+}
+
+.uk {
+    color: #757575;
+    padding: 10px;
+}
+
+.footer1 {
+    flex: 4;
+    padding: 10px;
+}
+
 
 /* 950 and smaller  */
 
